@@ -3,6 +3,12 @@
     box-sizing: border-box;
 }
 
+section div {
+animation: appear linear;
+animation-timeline: view();
+animation-range: entry 0% cover 40%;
+}
+
 @keyframes appear {
     from {
         opacity: 0;
@@ -12,10 +18,4 @@
         opacity: 1;
         scale: 1;
     }
-}
-
-section div {
-animation: appear linear;
-animation-timeline: view();
-animation-range: entry 0% cover 40%;
 }
