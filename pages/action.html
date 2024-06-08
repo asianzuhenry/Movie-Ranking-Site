@@ -1,11 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Action</title>
-</head>
-<body>
-    <h1>Action</h1>
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="fixed w-full z-50 top-0">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a href="/"><- Home</a></li>
+                <li>
+                  <a>Genres</a>
+                  <ul class="p-2">
+                    <li>
+                      <ul>
+                        <li><a href="./pages/adventure.html">Adventure</a></li>
+                        <li><a href="./pages/fantasy.html">Fantasy</a></li>
+                        <li><a href="./pages/action.html">Action</a></li>
+                        <li><a href="./pages/animation.html">Animation</a></li>
+                        <li><a href="./pages/comedy.html">Comedy</a></li>
+                        <li><a href="./pages/horror.html">Horror</a></li>
+                        <li><a href="./pages/sci-fi.html">Sci Fi</a></li>
+                        <li><a href="./pages/drama.html">Drama</a></li>
+                      </ul>
+                    </li>
+                    <li><a>Gullary</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-ghost text-xl">Rate It</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="/"><- Home</a></li>
+              <li>
+                <details>
+                  <summary>Genres</summary>
+                  <ul class="p-2">
+                    <li><a href="./pages/adventure.html">Adventure</a></li>
+                    <li><a href="./pages/fantasy.html">Fantasy</a></li>
+                    <li><a href="./pages/action.html">Action</a></li>
+                    <li><a href="./pages/animation.html">Animation</a></li>
+                    <li><a href="./pages/comedy.html">Comedy</a></li>
+                    <li><a href="./pages/horror.html">Horror</a></li>
+                    <li><a href="./pages/sci-fi.html">Sci Fi</a></li>
+                    <li><a href="./pages/drama.html">Drama</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li><a>Gullary</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="align-center justify-center pt-3">
+              <input
+                type="checkbox"
+                value="synthwave"
+                class="toggle theme-controller mr-4"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+    <main class="w-full">
+      <section
+        id="top-6"
+        class="w-full mt-8 mb-5 flex flex-col align-center justify-center flex-wrap gap-4"
+      >
+        <div>
+          <h2 class="w-full text-2xl font-bold text-center">Top 6</h2>
+        </div>
+        <div
+          class="w-full flex align-center justify-center flex-wrap p-10 gap-8"
+        >
+          <div
+            class="card h-[400px] w-96 bg-base-100 shadow-xl hover:bg-white transition duration-500 hover:scale-110 hover:z-10 hover:text-black"
+          >
+            <figure>
+              <img
+                class="w-full"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWIOB5QtDxenL5P2DpWnUKaLWjLE6GoLrafg&s"
+                alt="acquaman"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">AcquaMan</h2>
+              <p>AND THE LOST KINGDOM</p>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-even flex align-center gap-8">
+                <div class="watch-trailer">
+                  <a href="">
+                    <button class="btn">Watch Trailer</button>
+                  </a>
+                </div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card h-[400px] w-96 bg-base-100 shadow-xl hover:bg-white transition duration-500 hover:scale-110 hover:z-10 hover:text-black"
+          >
+            <figure>
+              <img
+                class="w-full"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpNc-4_q1X5NQnC5YWg6LiRSms67QMY_2ZeA&s"
+                alt="venom"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Venom</h2>
+              <p>THE LAST DANCE</p>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-even flex align-center gap-8">
+                <div class="watch-trailer">
+                  <a href="">
+                    <button class="btn">Watch Trailer</button>
+                  </a>
+                </div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card h-[400px] w-96 bg-base-100 shadow-xl hover:bg-white transition duration-500 hover:scale-110 hover:z-10 hover:text-black"
+          >
+            <figure>
+              <img
+                class="w-full"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs2hGRrp6NjohZOHuqCO4MtoZUr0p9L4sCbw&s"
+                alt="hotel translivania"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Hotel Translivania</h2>
+              <p>SCARY-TALE ADVENTURES</p>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-even flex align-center gap-8">
+                <div class="watch-trailer">
+                  <a href="">
+                    <button class="btn">Watch Trailer</button>
+                  </a>
+                </div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card h-[400px] w-96 bg-base-100 shadow-xl hover:bg-white transition duration-500 hover:scale-110 hover:z-10 hover:text-black"
+          >
+            <figure>
+              <img
+                class="w-full"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM5NwCIAe-uBV7n4tT3kHn6BusORSkBHE00A&s"
+                alt="big hero 6"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Big Hero 6</h2>
+              <p>N/A</p>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-even flex align-center gap-8">
+                <div class="watch-trailer">
+                  <a href="">
+                    <button class="btn">Watch Trailer</button>
+                  </a>
+                </div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card h-[400px] w-96 bg-base-100 shadow-xl hover:bg-white transition duration-500 hover:scale-110 hover:z-10 hover:text-black"
+          >
+            <figure>
+              <img
+                class="w-full"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUrWVzivGmZbZv4-5c1LyAlyUgjPqva5Bsyw&s"
+                alt="kungu fu panda"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Kung Fu Panda</h2>
+              <p>N/A</p>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-even flex align-center gap-8">
+                <div class="watch-trailer">
+                  <a href="">
+                    <button class="btn">Watch Trailer</button>
+                  </a>
+                </div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card h-[400px] w-96 bg-base-100 shadow-xl hover:bg-white transition duration-500 hover:scale-110 hover:z-10 hover:text-black"
+          >
+            <figure>
+              <img
+                class="w-full"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuK4xM0LPs_uJiPQJkTNEGg3B4m4c8-ILfMQ&s"
+                alt="encanto"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Encanto</h2>
+              <p>N/A</p>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-even flex align-center gap-8">
+                <div class="watch-trailer">
+                  <a href="">
+                    <button class="btn">Watch Trailer</button>
+                  </a>
+                </div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 - AllRghts Reserved</p>
+    </footer>
+  </body>
 </html>
